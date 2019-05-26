@@ -23,7 +23,7 @@ pod 'KPengUtils',:git=>'https://github.com/smithgoo/KPengUtils.git'
 
 ## Author
 
-294336370@qq.com, 295336370@qq.com
+294336370@qq.com,王朋
 
 ## License
 
