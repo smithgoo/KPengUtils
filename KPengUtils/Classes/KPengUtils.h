@@ -1,4 +1,4 @@
-
+#import "KPIdCodeView.h"
 #import "ConfigInfo.h"
 #import "HRAudioPlayer.h"
 #import "HandleImageView.h"
