@@ -31,16 +31,16 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   #s.source_files = 'KPengUtils/Classes/**/*'
-    s.subspec 'Categories' do |n|
+    s.subspec 'KPengCategories' do |n|
     n.source_files = 'KPengUtils/Classes/KPengCategories/*'
     #n.dependency 'pop'
     end
 
-    s.subspec 'codeView' do |n|
+    s.subspec 'KPengcodeView' do |n|
     n.source_files = 'KPengUtils/Classes/KPengcodeView/*'
     end
 
-    s.subspec 'CountDown' do |n|
+    s.subspec 'KPengCountDown' do |n|
     n.source_files = 'KPengUtils/Classes/KPengCountDown/*'
     end
 
@@ -48,15 +48,15 @@ Pod::Spec.new do |s|
     n.source_files = 'KPengUtils/Classes/KPengNormal/*'
     end
 
-    s.subspec 'm3u8PlayandDown' do |n|
+    s.subspec 'KPengm3u8PlayandDown' do |n|
     n.source_files = 'KPengUtils/Classes/KPengm3u8PlayandDown/*'
     end
 
-    s.subspec 'PaintView' do |n|
+    s.subspec 'KPengPaintView' do |n|
     n.source_files = 'KPengUtils/Classes/KPengPaintView/*'
     end
 
-    s.subspec 'SongList' do |n|
+    s.subspec 'KPengSongwords' do |n|
     n.source_files = 'KPengUtils/Classes/KPengSongwords/*'
     end
 
