@@ -32,7 +32,7 @@
     CGFloat x = CGRectGetWidth(frame)/2;
     CGFloat y = CGRectGetHeight(frame)/2;
     self.radius = MIN(x, y);
-    _backColor   =km_rgb_hex(0xeaeaea);
+    _backColor   =[UIColor blackColor];
     _strokeColor = [UIColor clearColor];
  }
 
