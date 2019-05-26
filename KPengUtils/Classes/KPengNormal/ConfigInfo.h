@@ -10,9 +10,6 @@
 
 @interface ConfigInfo : NSObject
 
-//c初始化
-+ (void)initialize;
-
 /**
  *  获取是否需要展示引导页
  *
