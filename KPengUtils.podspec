@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KPengUtils'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KPengUtils.'
+  s.summary          = 'KPengUtils comm user'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/294336370@qq.com/KPengUtils'
+  s.homepage         = 'https://github.com/smithgoo/KPengUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '294336370@qq.com' => '295336370@qq.com' }
-  s.source           = { :git => 'https://github.com/294336370@qq.com/KPengUtils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/smithgoo/KPengUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'KPengUtils/Classes/**/*'
   
