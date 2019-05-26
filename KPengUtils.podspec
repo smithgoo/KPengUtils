@@ -32,16 +32,16 @@ Pod::Spec.new do |s|
 
   #s.source_files = 'KPengUtils/Classes/**/*'
     s.subspec 'Categories' do |n|
-    n.source_files = 'KPengUtils/Classes/Categories/*'
+    n.source_files = 'KPengUtils/Classes/KPengCategories/*'
     #n.dependency 'pop'
     end
 
     s.subspec 'codeView' do |n|
-    n.source_files = 'KPengUtils/Classes/codeView/*'
+    n.source_files = 'KPengUtils/Classes/KPengcodeView/*'
     end
 
     s.subspec 'CountDown' do |n|
-    n.source_files = 'KPengUtils/Classes/CountDown/*'
+    n.source_files = 'KPengUtils/Classes/KPengCountDown/*'
     end
 
     s.subspec 'KPengNormal' do |n|
@@ -49,15 +49,15 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'm3u8PlayandDown' do |n|
-    n.source_files = 'KPengUtils/Classes/m3u8PlayandDown/*'
+    n.source_files = 'KPengUtils/Classes/KPengm3u8PlayandDown/*'
     end
 
     s.subspec 'PaintView' do |n|
-    n.source_files = 'KPengUtils/Classes/PaintView/*'
+    n.source_files = 'KPengUtils/Classes/KPengPaintView/*'
     end
 
     s.subspec 'SongList' do |n|
-    n.source_files = 'KPengUtils/Classes/SongList/*'
+    n.source_files = 'KPengUtils/Classes/KPengSongwords/*'
     end
 
     s.resource_bundles = {
