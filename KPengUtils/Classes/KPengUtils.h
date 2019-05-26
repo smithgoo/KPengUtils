@@ -11,3 +11,4 @@
 #import "UIView+FrameExtension.h"
 #import "VierticalScrollView.h"
 #import "WHCFileManager.h"
+#import "UIView+size.h"
