@@ -30,12 +30,41 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'KPengUtils/Classes/**/*'
-  s.resource_bundles = {
-    'KPengUtils' => ['KPengUtils/Assets/*.png']
-  }
+  #s.source_files = 'KPengUtils/Classes/**/*'
+    s.subspec 'Categories' do |n|
+    n.source_files = 'KPengUtils/Classes/Categories/*'
+    #n.dependency 'pop'
+    end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit'
-  s.dependency   'AFNetworking', '~> 3.1.0'
+    s.subspec 'codeView' do |n|
+    n.source_files = 'KPengUtils/Classes/codeView/*'
+    end
+
+    s.subspec 'CountDown' do |n|
+    n.source_files = 'KPengUtils/Classes/CountDown/*'
+    end
+
+    s.subspec 'KPengNormal' do |n|
+    n.source_files = 'KPengUtils/Classes/KPengNormal/*'
+    end
+
+    s.subspec 'm3u8PlayandDown' do |n|
+    n.source_files = 'KPengUtils/Classes/m3u8PlayandDown/*'
+    end
+
+    s.subspec 'PaintView' do |n|
+    n.source_files = 'KPengUtils/Classes/PaintView/*'
+    end
+
+    s.subspec 'SongList' do |n|
+    n.source_files = 'KPengUtils/Classes/SongList/*'
+    end
+
+    s.resource_bundles = {
+        'KPengUtils' => ['KPengUtils/Assets/*.png']
+    }
+
+    # s.public_header_files = 'Pod/Classes/**/*.h'
+    s.frameworks = 'UIKit', 'MapKit'
+    s.dependency   'AFNetworking', '~> 3.1.0'
 end
