@@ -31,11 +31,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'KPengUtils/Classes/**/*'
-  # s.resource_bundles = {
-  #   'KPengUtils' => ['KPengUtils/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'KPengUtils' => ['KPengUtils/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit'
-  s.dependency   'AFNetworking', '~> 3.1.0'
+  s.dependency   'AFNetworking', '~> 3.1.0',pod 'ijkplayer', '~> 1.1.3'
 end
