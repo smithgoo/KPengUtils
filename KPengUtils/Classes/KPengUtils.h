@@ -1,3 +1,6 @@
+
+#import "ConfigInfo.h"
+#import "HRAudioPlayer.h"
 #import "HandleImageView.h"
 #import "KPDrawPaintView.h"
 #import "KpengDianZanBtn.h"
