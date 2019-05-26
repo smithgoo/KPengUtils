@@ -30,11 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  #s.source_files = 'KPengUtils/Classes/**/*'
-  #二级目录
-  s.subspec 'KPengUtils' do |ss|
-  ss.source_files = '************/Classes/KPengUtils/*.{h,m}'
-  #二级目录
+  s.source_files = 'KPengUtils/Classes/**/*'
   # s.resource_bundles = {
   #   'KPengUtils' => ['KPengUtils/Assets/*.png']
   # }
