@@ -29,8 +29,9 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+    s.public_header_files = 'KPengUtils/KPengUtils.h'
+    s.source_files = 'KPengUtils/KPengUtils.h'
 
-  #s.source_files = 'KPengUtils/Classes/**/*'
     s.subspec 'KPengCategories' do |n|
     n.source_files = 'KPengUtils/Classes/KPengCategories/*'
     #n.dependency 'pop'
