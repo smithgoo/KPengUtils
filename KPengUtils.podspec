@@ -24,14 +24,27 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/smithgoo/KPengUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '294336370@qq.com' => '295336370@qq.com' }
+  s.author           = { '294336370@qq.com' => '294336370@qq.com' }
   s.source           = { :git => 'https://github.com/smithgoo/KPengUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
     s.public_header_files = 'KPengUtils/KPengUtils.h'
     s.source_files = 'KPengUtils/KPengUtils.h'
 
+pch_AF = <<-EOS
+#ifndef TARGET_OS_IOS
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+#define TARGET_OS_WATCH 0
+#endif
+#ifndef TARGET_OS_TV
+#define TARGET_OS_TV 0
+#endif
+EOS
+s.prefix_header_contents = pch_AF
+
+    s.ios.deployment_target = '9.0'
     s.subspec 'KPengCategories' do |n|
     n.source_files = 'KPengUtils/Classes/KPengCategories/*'
     #n.dependency 'pop'
